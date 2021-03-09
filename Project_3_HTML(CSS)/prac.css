@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background: rgb(119, 116, 115);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    min-height: 100%;   
+    margin: 0 auto;
+    color: white;
+  
+    
+
+}
+.container h2{
+ text-align: center;
+ 
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+header:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
+}
+.person{
+    position: absolute;
+    width: 45%;
+    /* height: 1400px; */
+    bottom: -35%;
+    left: -8%;
+    z-index: 20;
+}
+
+.mountain1{
+    position: absolute;   
+    width: 120%;
+    left:3%;
+    z-index: 19;
+}
+
+
+
+.mountain2{
+    position: absolute;
+    width: 110%;
+    height: 2000px;
+    bottom: -70%;
+    right: -20%;
+    z-index: 18;
+}
+
+.mountain3{
+    position: absolute;
+    width: 120%;
+    height: 2000px;
+   left: 7%;
+    bottom: -45%;
+    z-index: 17;
+}
+
+.sky{
+    position: absolute;
+    width: 120%;
+    /* height: 800px; */
+    top: 0%;
+    right: 0;
+    z-index: 16;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 30;
+    background: linear-gradient(to bottom, rgba( 0, 0, 0, 0.05), transparent);
+}
+
+nav .container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header{
+    height: 5%;
+    border: solid 3px red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav{
+    height: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.login{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    border-radius: 3em;
+   height: 50px;
+   width: 10%;
+    font-size: 100%;
+    border: none;
+    font-weight: bold;
+    background: rgba( 255, 255, 255, 0.01);
+    box-shadow: 0 8px 32px 0 rgba( 0,0,0,0.1 );   
+    border: 1px solid rgba( 255, 255, 255, 1 );
+
+}
+.signup{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 82%;
+    height: 50px;
+   width: 10%;
+   border-radius: 3em;
+   font-size: 100%;
+   border: none;
+   font-weight: bold;
+   background: rgba( 255, 255, 255, 0.01);
+    box-shadow: 0 8px 32px 0 rgba( 0,0,0,0.1 );   
+    border: 1px solid rgba( 255, 255, 255, 1 );
+
+   
+}
+
+.logo{
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    height: 50%;
+    position: absolute;
+    left: 40%;
+    
+}
+
+
+
+
+
+
+.bar{
+    position: relative;
+    width: 1.2rem; 
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before, .bar:after{
+    content: '';
+    position: absolute;
+    width: 1.55rem;
+    height: 3px;
+    right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.bar:before{
+    transform: translateY(-8px);
+}
+
+.bar:after{
+    transform: translateY(8px);
+}
+
+.big-title{
+    
+    position: absolute;
+
+    z-index: 30;
+    line-height: 4rem;
+    top: calc(50% - 2rem);
+    width: 100%;
+    text-align: center;
+   transform-origin: bottom;
+    font-size: 5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+section{
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+}
+
+section .container{
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30% 40% 30%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    
+}
+
+section img{
+    width: 100%;
+}
+
+section .container > *{
+    margin: 2rem;
+}
+
+.content{
+    grid-column: 1/-1;
+    color: #fff;
+    transform: translateY(-50px);
+
+}
+
+.imgContainer{
+    transform: translateY(50px);
+}
+
+.title{
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    position: relative;
+    
+    text-align: center;
+  
+}
+
+.border{
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+}
+
+.shadow{
+    position: absolute;
+    bottom: 100%;
+    height: 300px;
+    width: 100%;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(to top, #151515, transparent);
+}
+
+.opacity{
+    opacity: 0;
+}
+
+@media (max-width: 850px){
+    section .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 600px){
+    .big-title{
+        font-size: 3rem
+    }
+
+    .text{
+        font-size: .8rem;
+    }
+
+    .title{
+        font-size: 1.2rem;
+        font-family: ;
+    }
+}
